@@ -1,0 +1,21 @@
+{
+    "Description": "使用正确公式显示 macOS 内存使用率",
+    "Name": "内存使用率(修正)",
+    "Category": "系统监控",
+    "com.dawn80s.streamdock.memoryusage.action": {
+        "Name": "内存使用率",
+        "Tooltip": "显示接近活动监视器语义的 macOS 内存使用率（active + wired + compressor）"
+    },
+    "Localization": {
+        "内存使用率": "内存使用率",
+        "低阈值": "低阈值",
+        "危险阈值": "危险阈值",
+        "图内标题": "图内标题",
+        "显示图内标题": "显示图内标题",
+        "显示图内百分比": "显示图内百分比",
+        "百分比字号": "百分比字号",
+        "图内标题字号": "图内标题字号",
+        "公式: (active + wired + compressor) / 物理内存": "公式: (active + wired + compressor) / 物理内存",
+        "画在圆环下方的文字；StreamDock 顶部标题请在软件标题栏直接编辑": "画在圆环下方的文字；StreamDock 顶部标题请在软件标题栏直接编辑"
+    }
+}

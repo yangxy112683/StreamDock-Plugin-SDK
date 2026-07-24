@@ -1,0 +1,21 @@
+{
+    "Description": "Show macOS memory usage with Activity Monitor-like formula",
+    "Name": "Memory Usage (Fixed)",
+    "Category": "System Monitor",
+    "com.dawn80s.streamdock.memoryusage.action": {
+        "Name": "Memory Usage",
+        "Tooltip": "macOS memory usage using active + wired + compressor over physical memory"
+    },
+    "Localization": {
+        "内存使用率": "Memory Usage",
+        "低阈值": "Low Threshold",
+        "危险阈值": "Critical Threshold",
+        "图内标题": "In-image Title",
+        "显示图内标题": "Show In-image Title",
+        "显示图内百分比": "Show In-image Percent",
+        "百分比字号": "Percent Font Size",
+        "图内标题字号": "Title Font Size",
+        "公式: (active + wired + compressor) / 物理内存": "Formula: (active + wired + compressor) / physical memory",
+        "画在圆环下方的文字；StreamDock 顶部标题请在软件标题栏直接编辑": "Text under the ring; edit StreamDock key title in the software title field"
+    }
+}

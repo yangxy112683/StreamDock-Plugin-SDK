@@ -31,6 +31,8 @@ This repository includes plugin development templates for:
 - Qt
 - Python
 
+See also [`SDPlugins/`](./SDPlugins/) for complete sample plugins built on these templates (e.g. a fixed macOS memory-usage plugin).
+
 ## 🔨 Quick Start
 
 1. Choose a template in your preferred programming language

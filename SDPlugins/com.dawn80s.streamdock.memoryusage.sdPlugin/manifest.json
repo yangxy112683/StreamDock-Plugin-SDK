@@ -1,0 +1,63 @@
+{
+  "Actions": [
+    {
+      "Icon": "static/memory.png",
+      "Name": "内存使用率",
+      "DisableAutomaticStates": true,
+      "States": [
+        {
+          "Image": "static/memory_low.png",
+          "TitleAlignment": "bottom",
+          "FontSize": "12",
+          "FontStyle": "Bold"
+        }
+      ],
+      "Settings": {
+        "lowThresholdItem": 5,
+        "highThresholdItem": 95,
+        "colorLowThreshold": 16776960,
+        "colorHighThreshold": 16711680,
+        "gaugeLabel": "Memory",
+        "showGaugeLabel": true,
+        "showPercent": true,
+        "percentFontSize": 28,
+        "labelFontSize": 16
+      },
+      "Controllers": [
+        "Keypad",
+        "Information",
+        "SecondaryScreen",
+        "Knob",
+        "btn"
+      ],
+      "UserTitleEnabled": true,
+      "SupportedInMultiActions": true,
+      "Tooltip": "显示接近活动监视器语义的 macOS 内存使用率",
+      "UUID": "com.dawn80s.streamdock.memoryusage.action",
+      "PropertyInspectorPath": "propertyInspector/memory/index.html",
+      "KeyboardSupport": true
+    }
+  ],
+  "SDKVersion": 1,
+  "Author": "dawn80s",
+  "Name": "内存使用率(修正)",
+  "Icon": "static/memory.png",
+  "CodePathWin": "plugin/index.js",
+  "CodePathMac": "plugin/index.js",
+  "Description": "使用 active+wired+compressor 相对物理内存计算 macOS 内存占用，修复官方插件长期显示约 100% 的问题",
+  "Category": "系统监控",
+  "CategoryIcon": "static/memory.png",
+  "Version": "1.1.0",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "3.10.188.226"
+  },
+  "Nodejs": {
+    "Version": "20"
+  }
+}

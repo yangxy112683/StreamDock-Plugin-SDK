@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Memory Usage - Property Inspector</title>
+    <link href="../utils/bootstrap-icons.css" rel="stylesheet">
+    <link href="../utils/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sdpi-wrapper p-3" style="display:none">
+        <div class="mb-2 fw-semibold">内存使用率</div>
+        <div class="text-secondary small mb-3">公式: (active + wired + compressor) / 物理内存</div>
+
+        <div class="mb-3">
+            <label class="form-label" for="gaugeLabel">图内标题</label>
+            <input type="text" class="form-control" id="gaugeLabel" maxlength="24" placeholder="Memory">
+            <div class="form-text text-secondary">画在圆环下方的文字；StreamDock 顶部标题请在软件标题栏直接编辑</div>
+        </div>
+
+        <div class="mb-3 d-flex gap-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="showGaugeLabel" checked>
+                <label class="form-check-label" for="showGaugeLabel">显示图内标题</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="showPercent" checked>
+                <label class="form-check-label" for="showPercent">显示图内百分比</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="percentFontSize">百分比字号</label>
+            <input type="number" class="form-control" id="percentFontSize" min="10" max="48" value="28">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="labelFontSize">图内标题字号</label>
+            <input type="number" class="form-control" id="labelFontSize" min="8" max="32" value="16">
+        </div>
+
+        <hr class="border-secondary">
+
+        <div class="mb-3">
+            <label class="form-label" for="lowThresholdItem">低阈值</label>
+            <div class="d-flex gap-2 align-items-center">
+                <input type="color" class="form-control form-control-color" id="colorLowThreshold" value="#ffff00" title="低阈值颜色">
+                <input type="number" class="form-control" id="lowThresholdItem" min="0" max="100" value="5">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="highThresholdItem">危险阈值</label>
+            <div class="d-flex gap-2 align-items-center">
+                <input type="color" class="form-control form-control-color" id="colorHighThreshold" value="#ff0000" title="危险阈值颜色">
+                <input type="number" class="form-control" id="highThresholdItem" min="0" max="100" value="95">
+            </div>
+        </div>
+    </div>
+
+    <script src="../utils/common.js"></script>
+    <script src="../utils/action.js"></script>
+    <script src="index.js"></script>
+</body>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        padding: 8px;
+        background-color: #2a2a2a;
+        color: #fff;
+    }
+    ::-webkit-scrollbar { display: none; }
+    .form-control, .form-control-color {
+        background-color: #3a3a3a;
+        color: #fff;
+        border-color: #555;
+    }
+    .form-text { font-size: 11px; }
+</style>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "streamdock-memory-usage",
+  "version": "1.0.0",
+  "author": "dawn80s",
+  "main": "index.js",
+  "description": "StreamDock macOS memory usage plugin with Activity Monitor-like formula",
+  "scripts": {
+    "build": "npx ncc build index.js -m -o ./build && node install-mac.js",
+    "install:mac": "node install-mac.js",
+    "check": "node -e \"require('./memory').getMemoryUsage().then(r=>console.log(JSON.stringify(r,null,2))).catch(e=>{console.error(e);process.exit(1)})\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "log4js": "^6.9.1",
+    "pureimage": "^0.4.20",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3"
+  }
+}
